@@ -1,29 +1,30 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.DependencyInjection;
 
 namespace Api.Ocelot
 {
     public class Startup
     {
-        private readonly IConfiguration _configuration;
-
-        public Startup(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
-
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication()
+                .AddJwtBearer("test", options =>
+                {
+                    options.RequireHttpsMetadata = false;
+                    options.Authority = "http://test.com";
+                    options.Audience = "test";
+                });
+
             services.AddOcelot();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            app.UseOcelot().Wait();
+            app
+                .UseOcelot()
+                .Wait();
         }
     }
 }
