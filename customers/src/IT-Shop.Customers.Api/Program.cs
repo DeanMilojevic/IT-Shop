@@ -18,6 +18,7 @@ namespace IT_Shop.Customers.Api
                     webBuilder.ConfigureKestrel(options =>
                     {
                         // Setup a HTTP/2 endpoint without TLS.
+                        // TODO: NEVER DO THIS IN PRODUCTION CODE!!!
                         // https://go.microsoft.com/fwlink/?linkid=2099682
                         options.ListenLocalhost(5000, o => o.Protocols =
                             HttpProtocols.Http2);
