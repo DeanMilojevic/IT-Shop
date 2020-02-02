@@ -1,8 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>IT_Shop.Customers.Core.MongoDB</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath></OutputPath>
+    <WarningLevel></WarningLevel>
+    <OutputPath>bin\Debug\netstandard2.1</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="QueryHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Mediator.AspNetCore.DependencyInjection.Extensions" Version="1.0.1" />
+  </ItemGroup>
 </Project>
