@@ -1,0 +1,1 @@
+Here we can implement an example of the support chat and maybe even a bot 

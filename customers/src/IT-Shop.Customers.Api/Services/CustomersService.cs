@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ITShop.Customers.Api.Services
 {
-    public class CustomersService : IT_Shop.Customers.Api.Generated.CustomersService.CustomersServiceBase
+    public class CustomersService : CustomersService.CustomersServiceBase
     {
         private readonly ILogger<CustomersService> _logger;
 
