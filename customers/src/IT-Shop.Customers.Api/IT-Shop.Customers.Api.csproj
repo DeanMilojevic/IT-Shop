@@ -14,9 +14,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Mediator.AspNetCore.DependencyInjection.Extensions" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Generated\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
