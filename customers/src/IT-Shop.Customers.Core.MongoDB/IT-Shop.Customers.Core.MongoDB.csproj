@@ -12,6 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="QueryHandlers\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj" />
