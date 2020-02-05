@@ -2,27 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>IT_Shop.Customers.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\customers.proto" GrpcServices="Server" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.26.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.26.0">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="Mediator.AspNetCore.DependencyInjection.Extensions" Version="1.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Generated\" />
-  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
