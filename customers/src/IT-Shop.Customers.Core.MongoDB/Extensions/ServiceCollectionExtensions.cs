@@ -12,7 +12,7 @@ namespace IT_Shop.Customers.Core.MongoDB.Extensions
         public static IServiceCollection AddMongo(this IServiceCollection services)
         {
             services.AddQueryHandler<GetCustomer, Customer, GetCustomerHandler>();
-            services.AddQueryHandler<BrowseCustomers, IEnumerable<Customer>, BrowsseCustomersHandler>();
+            services.AddQueryHandler<BrowseCustomers, IEnumerable<Customer>, BrowseCustomersHandler>();
 
             return services;
         }
