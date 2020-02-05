@@ -33,7 +33,7 @@ namespace IT_Shop.Customers.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync(BrowseCustomersRequest request, CancellationToken cancellationToken = default)
+        public async Task<IActionResult> GetAsync(BrowseCustomersRequest request, CancellationToken cancellationToken = default)
         {
             _logger.LogInformation("Browse customers: {@request}", request);
 

@@ -13,11 +13,13 @@
   <ItemGroup>
     <Folder Include="QueryHandlers\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Mediator.AspNetCore.DependencyInjection.Extensions" Version="1.0.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.1" />
   </ItemGroup>
 </Project>
