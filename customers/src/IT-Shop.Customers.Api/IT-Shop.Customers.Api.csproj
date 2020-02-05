@@ -14,6 +14,9 @@
     <ProjectReference Include="..\IT-Shop.Customers.Core\IT-Shop.Customers.Core.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\IT-Shop.Customers.Core.MongoDB\IT-Shop.Customers.Core.MongoDB.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
