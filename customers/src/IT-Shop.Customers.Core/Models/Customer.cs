@@ -4,13 +4,15 @@ namespace IT_Shop.Customers.Core.Models
 {
     public class Customer
     {
-        public Customer(Guid id, string name)
+        public Customer(Guid id, Address billingAddress, Address shippingAddress)
         {
             Id = id;
-            Name = name;
+            BillingAddress = billingAddress;
+            ShippingAddress = shippingAddress;
         }
 
         public Guid Id { get; }
-        public string Name { get; }
+        public Address BillingAddress { get; }
+        public Address ShippingAddress { get; }
     }
 }
