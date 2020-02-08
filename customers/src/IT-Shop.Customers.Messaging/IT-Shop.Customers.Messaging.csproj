@@ -13,4 +13,7 @@
     <Folder Include="Producers\" />
     <Folder Include="Extensions\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.0.2" />
+  </ItemGroup>
 </Project>
