@@ -4,13 +4,11 @@ namespace IT_Shop.Customers.Events
 {
     public class SignedUp
     {
-        public SignedUp(Guid userId, string email)
+        public SignedUp(Guid userId)
         {
             UserId = userId;
-            Email = email;
         }
 
         public Guid UserId { get; }
-        public string Email { get; }
     }
 }
