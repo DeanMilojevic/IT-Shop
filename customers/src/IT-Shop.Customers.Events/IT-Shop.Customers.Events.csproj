@@ -7,4 +7,7 @@
     <Description>The events used by the IT-Shop.Customers project</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
 </Project>
