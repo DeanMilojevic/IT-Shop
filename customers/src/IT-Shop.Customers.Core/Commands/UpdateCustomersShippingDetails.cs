@@ -1,9 +1,9 @@
 ﻿using System;
 namespace IT_Shop.Customers.Core.Commands
 {
-    public class UpdateCustomersShippingBillingDetails
+    public class UpdateCustomersShippingDetails
     {
-        public UpdateCustomersShippingBillingDetails(
+        public UpdateCustomersShippingDetails(
             Guid customerId,
             string zipCode, string street, string number)
         {
