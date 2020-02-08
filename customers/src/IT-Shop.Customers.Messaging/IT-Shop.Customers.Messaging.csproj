@@ -12,6 +12,7 @@
     <Folder Include="Consumers\" />
     <Folder Include="Producers\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Options\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MassTransit.AspNetCore" Version="6.0.2" />
